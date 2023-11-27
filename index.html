@@ -5,56 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/627d10de04.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <div class="window">
-        <div class="text">
-          <h3>To Do</h3>
+      <div class="boards">
+        <div class="board">
+          <div class="board-header">
+            <h3>To Do</h3>
+            <span class="count" id="todo-count">1</span>
+          </div>
+          <div class="newTask" id="todo">
+            <!-- <div class="task">
+              <p>complete assignment</p>
+              <p>add</p>
+            </div> -->
+          </div>
+          <div class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            <div id="add-card">Add card</div>
+          </div>
         </div>
-        <button class="btn">+ Add card</button>
-      </div>
-      <div class="window">
-        <div class="text">
-          <h3>In Progress</h3>
+        <div class="board">
+          <div class="board-header">
+            <h3>In Progress</h3>
+            <span class="count" id="todo-count">1</span>
+          </div>
+          <div class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            <div id="add-card">Add card</div>
+          </div>
         </div>
-        <button class="btn">+ Add card</button>
-      </div>
-      <div class="window">
-        <div class="text">
-          <h3>Stuck</h3>
+        <div class="board">
+          <div class="board-header">
+            <h3>Stuck</h3>
+            <span class="count" id="todo-count">0</span>
+          </div>
+          <div class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            <div id="add-card">Add card</div>
+          </div>
         </div>
-        <button class="btn">+ Add card</button>
-      </div>
-      <div class="window">
-        <div class="text">
-          <h3>Done</h3>
+        <div class="board">
+          <div class="board-header">
+            <h3>Done</h3>
+            <span class="count" id="todo-count">0</span>
+          </div>
+          <div class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            <div id="add-card">Add card</div>
+          </div>
         </div>
-        <button class="btn">+ Add card</button>
       </div>
-      <div class="addtask">
+      <div id="modal">
         <h2>Add Task</h2>
         <div>
           <label for="title">Title</label>
           <input type="text" name="title" id="title" />
-          <p class="helper-text">Бөглөнө үү</p>
         </div>
         <div>
-          <label for="discription">Discription</label>
+          <label for="description">Description</label>
           <textarea
             name="description"
             id="description"
             cols="50"
             rows="4"
           ></textarea>
-          <input type="text" name="title" id="title" />
-          <p class="helper-text">Бөглөнө үү</p>
         </div>
 
-        input
-        <input type="text" />
-        <h5>Discription</h5>
-        <input type="text" />
         <h5>Status</h5>
         <select name="" id="">
           <option value="To do">To do</option>
@@ -66,11 +87,10 @@
         <select name="" id="">
           <option value="Low">Low</option>
           <option value="Medium">Medium</option>
-          ls
 
           <option value="High">High</option>
         </select>
-        <button class="btnTask">Add card</button>
+        <button id="btnTask">Add Task</button>
       </div>
     </div>
     <script src="script.js"></script>

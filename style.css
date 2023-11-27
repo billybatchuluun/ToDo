@@ -1,42 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   display: flex;
   gap: 70px;
-  justify-content: center;
+
   background-image: url(./AD.jpeg);
   background-size: cover;
 }
-.window {
+.boards {
+  display: flex;
+  gap: 16px;
+  padding: 120px 0px;
+}
+.board {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 100px;
-  background-color: rgb(199, 191, 191);
+  height: fit-content;
+  padding: 8px;
+  background-color: #ebecf0;
   margin-top: 30px;
   border-radius: 10px;
   background-color: rgb(54, 54, 69);
   color: white;
 }
-.btn {
-  border: 2px solid black;
+.board-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.add-btn {
+  display: flex;
+  justify-content: center;
   border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
   align-items: center;
   width: 280px;
   height: 30px;
   background-image: url(./ball.jpeg);
   background-size: cover;
   color: white;
+  gap: 5px;
 }
-.innertext {
-  justify-content: center;
-}
-.addtask {
-  display: flex;
+
+#modal {
+  display: none;
   flex-direction: column;
-  justify-content: center;
+  padding: 16px;
   width: 400px;
-  height: 500px;
-  background-color: white;
-  border-radius: 5px;
+  background-image: url(./ball.jpeg);
+  border-radius: 8px;
+  gap: 16px;
+  color: white;
+  height: fit-content;
+}
+
+.task {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  width: 280px;
+  height: 30px;
+  background-color: aliceblue;
 }
