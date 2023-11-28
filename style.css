@@ -72,6 +72,30 @@
   padding: 10px;
   border-radius: 10px;
   width: 280px;
-  height: 30px;
+
   background-color: aliceblue;
+}
+h4 {
+  color: black;
+  font-weight: bold;
+}
+p {
+  color: black;
+}
+
+.newTask {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: grab;
+  display: flex;
+  gap: 12px;
+}
+
+.any {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: grab;
+  display: flex;
+  gap: 12px;
 }

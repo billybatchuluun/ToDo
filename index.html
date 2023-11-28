@@ -13,15 +13,25 @@
   <body>
     <div class="container">
       <div class="boards">
-        <div class="board">
+        <div class="board" id="board1">
           <div class="board-header">
             <h3>To Do</h3>
             <span class="count" id="todo-count">1</span>
           </div>
           <div class="newTask" id="todo">
-            <!-- <div class="task">
-              <p>complete assignment</p>
-              <p>add</p>
+            <!-- <div class="card">
+              <div class="done">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="details">
+                <h4></h4>
+                <p></p>
+                <div class="priority"></div>
+              </div>
+              <div class="actions">
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
             </div> -->
           </div>
           <div class="add-btn">
@@ -69,6 +79,7 @@
         <div>
           <label for="description">Description</label>
           <textarea
+            class="description"
             name="description"
             id="description"
             cols="50"
