@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Render Example</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      // Data or state
+      const greeting = "Hello, World!";
+
+      // Get the container element from the DOM
+      const appContainer = document.getElementById("app");
+
+      // Render content to the DOM
+      function render() {
+        appContainer.innerHTML = `<div>${greeting}</div>`;
+      }
+
+      // Initial render
+      render();
+    </script>
+  </body>
+</html>

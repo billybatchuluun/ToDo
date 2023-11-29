@@ -39,7 +39,7 @@
             <div id="add-card">Add card</div>
           </div>
         </div>
-        <div class="board">
+        <div class="board" id="board2">
           <div class="board-header">
             <h3>In Progress</h3>
             <span class="count" id="todo-count">1</span>
@@ -49,17 +49,18 @@
             <div id="add-card">Add card</div>
           </div>
         </div>
-        <div class="board">
+        <div class="board" id="board3">
           <div class="board-header">
             <h3>Stuck</h3>
             <span class="count" id="todo-count">0</span>
           </div>
+          <div class="holder" id="turholder_board3"></div>
           <div class="add-btn">
             <i class="fa-solid fa-plus"></i>
             <div id="add-card">Add card</div>
           </div>
         </div>
-        <div class="board">
+        <div class="board" id="board4">
           <div class="board-header">
             <h3>Done</h3>
             <span class="count" id="todo-count">0</span>
@@ -70,6 +71,7 @@
           </div>
         </div>
       </div>
+      <!-- modal -->
       <div id="modal">
         <h2>Add Task</h2>
         <div>
@@ -86,19 +88,19 @@
             rows="4"
           ></textarea>
         </div>
-
+        <!-- status -->
         <h5>Status</h5>
-        <select name="" id="">
-          <option value="To do">To do</option>
-          <option value="In progress">In progress</option>
-          <option value="Stuck">Stuck</option>
-          <option value="Done"></option>
+        <select name="" id="statusSelect">
+          <option value="todo">To do</option>
+          <option value="inprogress">In progress</option>
+          <option value="stuck">Stuck</option>
+          <option value="done"></option>
         </select>
+        <!-- priority  -->
         <h5>Priority</h5>
-        <select name="" id="">
+        <select name="" id="prioritySelect">
           <option value="Low">Low</option>
           <option value="Medium">Medium</option>
-
           <option value="High">High</option>
         </select>
         <button id="btnTask">Add Task</button>

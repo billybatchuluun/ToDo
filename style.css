@@ -29,7 +29,7 @@
   background-color: #ebecf0;
   margin-top: 30px;
   border-radius: 10px;
-  background-color: rgb(54, 54, 69);
+  background-color: rgb(151, 151, 167);
   color: white;
 }
 .board-header {
@@ -88,6 +88,7 @@ p {
   border-radius: 4px;
   cursor: grab;
   display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
@@ -98,4 +99,28 @@ p {
   cursor: grab;
   display: flex;
   gap: 12px;
+}
+.card {
+  display: flex;
+  background-color: white;
+  gap: 12px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.endDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.middleDiv {
+  width: 180px;
+}
+
+.priority {
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  color: black;
 }
