@@ -26,7 +26,7 @@
   width: 300px;
   height: fit-content;
   padding: 8px;
-  /* background-color: #ebecf0; */
+
   margin-top: 30px;
   border-radius: 10px;
   background: inherit;
@@ -35,8 +35,16 @@
   color: white;
 }
 .card {
+  display: flex;
+
+  gap: 12px;
+  border-radius: 4px;
+  padding: 8px;
   background: inherit;
   box-shadow: 2px -4px 30px 3px rgba(25, 27, 17, 0.5);
+  background-color: rgba(94, 89, 89, 0.383);
+  inline-size: 280px;
+  overflow-wrap: break-word;
 }
 .board-header {
   display: flex;
@@ -109,19 +117,16 @@ p {
   display: flex;
   gap: 12px;
 }
-.card {
-  display: flex;
-  /* background-color: white; */
-  gap: 12px;
-  border-radius: 4px;
-  padding: 8px;
-}
+
 .endDiv {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .middleDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 180px;
 }
 
@@ -129,7 +134,11 @@ p {
   width: fit-content;
   padding: 4px 8px;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
   font-size: 12px;
-  color: black;
+  color: white;
+}
+.wrap {
+  width: 100px;
+  background-color: aqua;
 }

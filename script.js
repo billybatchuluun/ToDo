@@ -11,11 +11,14 @@ let board2 = document.getElementById("board2");
 let board3 = document.getElementById("board3");
 let board4 = document.getElementById("board4");
 
+let board4_cardholder = document.getElementById("cardholder_board4");
 let board3_cardholder = document.getElementById("cardholder_board3");
 let board2_cardholder = document.getElementById("cardholder_board2");
 let board1_cardholder = document.getElementById("cardholder_board1");
 
 let newTask = document.getElementById("todo");
+
+// let countNumber=document.getElementById("todo-count");
 
 const addtaskfunctionprocess = () => {
   //tom div
@@ -92,7 +95,17 @@ const addtaskfunctionprocess = () => {
 
   console.log(statusSelectRef);
 
-  //end div
+  //count number
+
+  function taskCount() {
+    const countNumber =
+      document.getElementById("cardholder_board1").childElementCount;
+    const displayNum = document.getElementById("todo-count");
+    console.log(displayNum);
+
+    displayNum.textContent = countNumber;
+  }
+
   const endDiv = document.createElement("div");
   endDiv.classList.add("endDiv");
   task.appendChild(endDiv);
@@ -102,6 +115,7 @@ const addtaskfunctionprocess = () => {
   deleteBtn.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
   deleteBtn.addEventListener("click", () => {
     task.remove();
+    taskCount();
   });
   endDiv.appendChild(deleteBtn);
 
@@ -118,10 +132,23 @@ const addtaskfunctionprocess = () => {
   endDiv.appendChild(editBtn);
 };
 
+function taskCount() {
+  const countNumber =
+    document.getElementById("cardholder_board1").childElementCount;
+  const displayNum = document.getElementById("todo-count");
+  console.log(displayNum);
+
+  displayNum.textContent = countNumber;
+}
+
 for (let i = 0; i < addCard.length; i++) {
   addCard[i].addEventListener("click", function () {
     TaskWindow.style.display = "flex";
   });
 }
 
-addTask.addEventListener("click", addtaskfunctionprocess);
+addTask.addEventListener("click", () => {
+  addtaskfunctionprocess();
+  taskCount();
+  2;
+});
